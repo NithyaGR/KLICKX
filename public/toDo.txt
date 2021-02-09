@@ -1,0 +1,152 @@
+
+sun - 2.43pm
+
+1) Router is not working right after clicking the any button- requires refresh everytime - how will it 
+store the logged in status? 
+2) Images are not displayed.
+3) Register page - take the data and create a user and keep that user in the browser memory
+4) While logging in successful, keep the user name and display it into the next userHome page
+5) While displaying image, grab the comments, likes.
+6) Change the login and logout based on the login status in the side bar. 
+6) Delete the user account - 
+
+User story - Register a user, Login - post comments, likes, dislikes, delete the comments and the user
+User story - already available users - you should be able to see the fav pages, profile pages, except
+deleting her/him self, should be able to delete the comments. 
+
+
+function logout() {
+    // remove user from local storage to log user out
+    localStorage.removeItem('user');
+}
+
+1) Image component is not rendering - this.props is undefined I used only map
+2) How to login using the new Register credentials? HOw to access these state? If I use mapSateToProps
+will it correctly connect to RegusterUSer Reducer and bring that data?
+
+
+
+feb2nd - 8.59 - Things to do
+1. render the comments & able to close the button and actions
+2. profile page
+3. favorite page
+4. settings page
+5. existing user - login
+6. delete the comments, user
+
+Saturday - 6.35 am
+Todo List
+1. adding pictures into likes - change the state - update with the time
+2. Profile picture with Images - retrieve the based on the time
+3. Delete the comments and user account - latter is done by default while logging out. 
+4. CSS - CSS _ STYLING
+5. readMd and comments - beautify the code
+6. Heroku
+https://perscholas.instructure.com/courses/630/assignments/80647
+userstory 1 - done - create an account - login - logout
+userstory 2 - profile images display - done
+userstory 3 - deleting the comments - settings page for deleting the user(logging out removing the user)
+userstory 4 - unlike clicks should remove it from the liked List - remove the liked image from the page
+              user homepage should be sorted by no of likes in descending order  
+              if same no of likes, sort by time - most recent one on top - done
+userstory 5 - favorites page - Done CSS CSS CSS   
+
+
+dispatch: ƒ dispatch(action)
+history: {length: 50, action: "PUSH", location: {…}, createHref: ƒ, push: ƒ, …}
+likedPictures: Array(2)
+0:
+comments: Array(3)
+0: {comment: "Beautifully captured!", by: "Kumar"}
+1: {comment: "So Green, and soothing!", by: "Shakthi"}
+2: {comment: "Thanks guys!", by: "Krishna"}
+length: 3
+__proto__: Array(0)
+id: 1
+likes: "3"
+name: "Vrindavan"
+postedBy: "Krishna"
+postedDate: "01/01/2021"
+source: "../Pictures/Vrindavan.jpg"
+__proto__: Object
+1: {id: 8, name: "Fire", postedDate: "01/14/2021", postedBy: "Kumar", source: "../Pictures/Fire.jpeg", …}
+length: 2
+__proto__: Array(0)
+location: {pathname: "/profile", search: "", hash: "", state: undefined, key: "2ni78o"}
+match: {path: "/profile", url: "/profile", isExact: true, params: {…}}
+newUser: {name: "", email: "", password: "", isLoggedIn: false, favorites: Array(0), …}
+profilePicture: {id: 9, name: "Fall", postedDate: "01/26/2021", postedBy: "Kumar", source: "../Pictures/Fall.jpg", …}
+staticContext: undefined
+userFavorites: [{…}]
+__proto__: Object
+// To sort according to the date.
+// console.log(this.props.likedPictures.comments);
+        // const sortedLikedPictures = this.props.likedPictures.sort((picObj1, picObj2) => picObj1. - picObj2.likedAtTime);
+        // console.log(sortedLikedPictures[0]);
+
+const maxValueOfY = Math.max(...arrayToSearchIn.map(o => o.y), 0);
+[
+  {
+    "x": "8/11/2009",
+    "y": 0.026572007
+  },
+  {
+    "x": "8/12/2009",
+    "y": 0.025057454
+  },
+  {
+    "x": "8/13/2009",
+    "y": 0.024530916
+  },
+  {
+    "x": "8/14/2009",
+    "y": 0.031004457
+  }
+]
+To find the max count
+const maxNoOfCommentsCount = Math.max(...likedPictures.map(object => object.comments.comment.length),0)
+To return the object which has most of no counts
+const max = data.reduce((prev, current) => (prev.y > current.y) ? prev : current)
+const reqImage = likedPictures.reduce((prev, current) => (prev.comments.comment.length > current.comments.comment.length) ? prev : current)
+
+
+{id: 3, name: "Red", postedDate: "01/14/2021", postedBy: "Krishna", source: "../Pictures/Red.jpg", …}
+commentPosted: true
+comments: Array(2)
+0: {comment: "So Red!", by: "Shakthi"}
+1: {comment: "Beautiful", by: ""Rama""}
+length: 2
+__proto__: Array(0)
+id: 3
+liked: true
+likedAtTime: Sun Feb 07 2021 18:42:50 GMT-0500 (Eastern Standard Time) {}
+likes: 1
+name: "Red"
+postedBy: "Krishna"
+postedDate: "01/14/2021"
+source: "../Pictures/Red.jpg"
+wantToAddComment: true
+
+delete button - deletes all the messages - though it prints the correct array in the console
+duplicate pictures added to the fav list or liked list
+after refreshed, I need to sign up again
+
+ReadMD file - yet to do
+Heroku - yet to do
+
+
+
+{id: 1, name: "Vrindavan", postedDate: "01/01/2021", postedBy: "Krishna", source: "../
+
+{id: 3, name: "Red", postedDate: "01/14/2021", postedBy: "Krishna", source: "../Pictures/Red.jpg", …}
+comments: Array(1)
+0: {comment: "So Red!", by: "Shakthi"}
+length: 1
+__proto__: Array(0)
+id: 3
+likes: "0"
+name: "Red"
+postedBy: "Krishna"
+postedDate: "01/14/2021"
+source: "../Pictures/Red.jpg"
+__proto__: Object

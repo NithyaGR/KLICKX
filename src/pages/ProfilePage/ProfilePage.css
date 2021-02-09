@@ -1,0 +1,46 @@
+.profilePage {
+    margin-top: 190px;
+    margin-left: 230px;
+}
+.profile{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.profileData {
+ 
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* background-color: rgb(69, 141, 141); */
+    background-color: #20bf55;
+    /* background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%); */
+    /* #004d7a */
+    background-image: linear-gradient(315deg, #20bf55 0%, #004d7a 74%);
+    color: #f1f1f1;    
+    text-align: center;
+    display: table-cell;  
+    overflow: hidden;
+    vertical-align: middle; 
+  }
+  .profile .profileImage img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .imageSection {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+  }
+
+  .image1, .image2 {
+     display: grid;
+     grid-template-rows: 65% 35%;
+     
+  }
+  .imageSection img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }

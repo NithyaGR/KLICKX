@@ -1,0 +1,21 @@
+
+.appContainer{
+    margin: auto;
+    text-align: center;
+    border-radius: 10px; 
+    height: 100%;
+    /* margin-top: 0px; */
+    
+}
+.appContainer .sidenav {
+  /* font-weight: bold; */
+}
+
+.appContainer .container{
+  align-content: center
+}
+
+
+
+
+
